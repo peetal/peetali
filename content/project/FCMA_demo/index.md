@@ -8,7 +8,6 @@ authors:
 
 tags: 
 #- Python
-#- Neural network
 categories: []
 date: 2021-07-23T20:21:35-08:00
 lastmod: 2021-07-23T23:21:35-08:00
@@ -33,26 +32,12 @@ projects: []
 
 Drafted by Peeta Li ([peetal@uoregon.edu](mailto:peetal@uoregon.edu)); Edited by Yida Wang ([yidawa@gmail.com](mailto:yidawa@gmail.com)) and Ben Hutchinson ([bhutch@uoregon.edu](mailto:bhutch@uoregon.edu))
 
-## Overview
-- Given an experimental deisgn that consists of two conditions (A and B), we can ask whether the functional connectivity (FC) between brain regions differs across conditions. Traditional FC analyses employ a seed based approach, which can be biased in terms of the regions or networks it discovers (seeds are arbitrarily chosen) and miss potentially important regions which are meaningfully involved, but not systematically connected with the seed region (e.g., [Wang et al., 2015](http://ntblab.yale.edu/wp-content/uploads/2015/06/Wang_JNM_2015.pdf)). In order to perform whole-brain FC analyses in a manner which considers all pairwise correlations in the brain, FCMA was developed.
+## Background
+- Functional Magnetic Resonance Imaging (fMRI) is a popular neuroimaging tool for studying neural substrates underlying human cognition. Preprocessed fMRI data is often represented as timeseires of 3D arrays, with each 3d array being the whole-brain activity pattern at certain time stamp. One way of making sense of this timeseries data is to estiamte "functional connectivity" between brain regions, which is simply the statistical correaltion between timseries assciated with the selected brain regions. The figure below shows the timeseries from two brain voxels and the correlation coefficient between these two timeseries is defined as the functional connectivity (FC) between the two voxels.
 
+![png](FCMA_demo_files/fc_2voxels.png)
 
-- Using FCMA, we can answer the following questions: 
-     1. Do functional connectivity patterns differ between condition A and B? 
-     2. If so, which brain regions are driving the difference?
-
-
-- This jupyter notebook uses simulated data to demonstrate how the above two questions could be answered with FCMA. Look here to see [the important details of simulated data](#dat)
-
-
-- Brainiak also includes a tutorial for FCMA, which could be found [here](https://brainiak.org/notebooks/tutorials/html/09-fcma.html).
-
-- Annotated Bibliography:
-     1. Shirer, W. R., Ryali, S., Rykhlevskaia, E., Menon, V., & Greicius, M. D. (2012). Decoding subject-driven cognitive states with whole-brain connectivity patterns. *Cerebral Cortex*, 22(1), 158–165. [`link`](https://doi.org/10.1093/cercor/bhr099) *Describes successful decoding of cognitive tasks using the pattern of correlation between 90 functional regions of interest across the brain.*
-     2. Turk-Browne, N. B. (2013). Functional interactions as big data in the human brain. *Science*, 342(6158), 580–584. [`link`](https://doi.org/10.1126/science.1238409) *Describes how complex biological systems, including neural processes, can be understood through the interactions of their component variables, such as the full correlation matrix in fMRI data.*
-     3. Wang, Y., Anderson, M. J., Cohen, J. D., Heinecke, A., Li, K., Satish, N., Sundaram, N., Turk-Browne, N. B., & Willke, T. L. (2015). Full correlation matrix analysis of fMRI data on Intel® Xeon Phi™ coprocessors. SC ’15: *Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis*, 1–12. [`link`](https://doi.org/10.1145/2807591.2807631) *Describes optimizations made for Intel Xeon Phi Coprocessors to greatly enhance FCMA performance in cluster-based computing environments.*
-     4. Wang, Y., Cohen, J. D., Li, K., & Turk-Browne, N. B. (2015). Full correlation matrix analysis (FCMA): An unbiased method for task-related functional connectivity. *Journal of Neuroscience Methods*, 251, 108–119. [`link`](https://doi.org/10.1016/j.jneumeth.2015.05.012) *Describes how FCMA can be used to discover regions that are involved in cognitive tasks by way of their functional connectivity.*
-
+- Recent studies have shown that whole brain FC patterns reflect ongoing cognitive states. Thus, given two task conditions (A and B), it is meaningful to **(i)** contrast the whole brain FC patterns underlying condition A versus B and **(ii)** identify the potential differences between the two. Full correlation matrix analysis (FCMA) was introduced exactly for these needs. The original FCMA paper can be found [here](http://ntblab.yale.edu/wp-content/uploads/2015/06/Wang_JNM_2015.pdf). The current project aims to present a demo for using FCMA on a simulated fMRI dataset, breaking down the complicated FCMA pipeline into steps. This demo is wrapped into the [Brainiak project](https://brainiak.org); related preprint can be found [here](https://osf.io/db2ev/)
 
 ## Table of Contents
 
