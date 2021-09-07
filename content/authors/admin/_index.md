@@ -30,7 +30,7 @@ education:
   - course: PhD in Cogntiive Neurosceince
     institution: University of Oregon
     year: 2019-present
-  - course: BA in Psychology Cognitive Neuroscience and Biology (minor) 
+  - course: BA in Cognitive Neuroscience and Biology (minor) 
     institution: Washington University in St.Louis
     year: 2015-2019
 
@@ -44,16 +44,16 @@ social:
   link: '/#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/peetal6958
+#- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
+#  icon_pack: fas
+#  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/peetal
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/peeta-yichen-li-67a845218/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
