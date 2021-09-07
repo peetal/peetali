@@ -13,6 +13,7 @@ date: 2021-07-23T20:21:35-08:00
 lastmod: 2021-07-23T23:21:35-08:00
 featured: true
 draft: false
+math: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -250,7 +251,6 @@ print(f"The top ranked 10 voxel IDs are {vox_rank[0:10]}")
 
     The length of the prediction accuracy list is 432
     The top ranked 10 voxel IDs are [234, 324, 382, 10, 8, 291, 17, 39, 78, 252]
-
 
 ### 1.6 Perform feature selection with actual FCMA implementation <a id="actual_fs"></a>
 - After understanding what the feature selection step does, let's now run the actual FCMA feature selection code. This actual code will go through everything we have done up to this point, but 1) with a much finer and efficient implementation and 2) repeating it 8 times, with each time leaving out a different subject (the example code only is only one fold of the outer loop, leaving out subject-0). 
