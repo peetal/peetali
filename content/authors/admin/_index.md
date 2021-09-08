@@ -20,6 +20,7 @@ organizations:
 interests:
 - Statistical Machine Learning  
 - Deep Learning 
+- Graph-Theoretic Models
 - Statistical Programming
 - Data Mining 
 
@@ -41,7 +42,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '/#contact'
+  link: yichenli6958@gmail.com
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/peetal6958
@@ -63,14 +64,12 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: yichenli6958@gmail.com
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am pursuing my PhD degree in psychology (specialized in cognitive neuroscience) at Universtiy of Oregon. My works focus on modeling, measuring and predicting human attention and attention-related beahviors. I apply machine learning algorithms in combined with inferential statistics to make sense of the data and infer cogntive processes from the data. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
