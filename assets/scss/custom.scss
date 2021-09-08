@@ -16,7 +16,10 @@ body {
   padding-top: 0;
   counter-reset: captions;
 }
-#particles-js{
-  background:firebrick;
-  height:400px;
+#particles-js {
+  margin-top: 100px;
+  width: 100vw;
+  height: 400px;
+  background: linear-gradient(45deg, #0ac8f8, #081866);
+  z-index: 9;
 }
