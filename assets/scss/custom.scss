@@ -7,14 +7,16 @@
   margin: 0 auto 0 auto;
 }
 
-body
-{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+body {
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: inherit;
+  color: inherit;
+  margin-top: 71px; /* Offset body content by navbar height. */
+  padding-top: 0;
+  counter-reset: captions;
 }
-#particles-js
-{
-    height:100%
-    background: #f00
+#particles-js{
+  background:firebrick;
+  height:400px;
 }
