@@ -30,7 +30,10 @@ education:
   courses:
   - course: PhD in Cogntiive Neurosceince
     institution: University of Oregon
-    year: 2019-present
+    year: 2020-present
+  - course: MS in Cogntiive Neurosceince
+    institution: University of Oregon
+    year: 2019-2020
   - course: BA in Cognitive Neuroscience and Biology (minor) 
     institution: Washington University in St.Louis
     year: 2015-2019
