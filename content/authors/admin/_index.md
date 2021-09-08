@@ -73,6 +73,6 @@ email: yichenli6958@gmail.com
 highlight_name: false
 ---
 
-I am pursuing my PhD degree in psychology (specialized in cognitive neuroscience) at Universtiy of Oregon. My works focus on modeling, measuring and predicting human attention and attention-related beahviors. I apply machine learning algorithms in combined with inferential statistics to make sense of the data and infer cogntive processes from the data. 
+I am pursuing my PhD degree in psychology (specialized in cognitive neuroscience) at Universtiy of Oregon. My works focus on modeling, measuring and predicting human attention and attention-related beahviors. I apply machine learning algorithms in combined with inferential statistics to make sense of the data and infer neural mechanisms from the data. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
