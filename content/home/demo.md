@@ -23,11 +23,7 @@ subtitle = ""
 
   # Background color.
   # color = "navy"
-  
-  # Background gradient.
-  gradient_start = "DarkGreen"
-  gradient_end = "ForestGreen"
-  
+
   # Background image.
   # image = "image.jpg"  # Name of image in `static/media/`.
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
@@ -52,9 +48,10 @@ subtitle = ""
 +++
 
 <div id="particles-js"></div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="/assets/js/particles.json"></script>
 <script>
-    particlesJS.load('particles-js', '../../assets/particles.json', function() {
+    particlesJS.load('particles-js', '/assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 </script>
