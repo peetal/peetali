@@ -19,11 +19,3 @@ title: About Me
 # See https://wowchemy.com/docs/get-started/#introduce-yourself
 author: admin
 ---
-
-<div id="particles-js"></div>
-<script src="../particles.js"></script>
-<script>
-particlesJS.load('particles-js', '../particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-</script>
