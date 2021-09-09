@@ -1,26 +1,25 @@
 # Theme metadata
-name = "my_theme"
+name = "Earth"
 
 # Is theme light or dark?
-light = true
+is_light = true
 
 # Primary
-primary = "#283618"
+primary = "#707070"
 
 # Menu
-menu_primary = "#8ECAE6"
-menu_text = "#283618"
-menu_text_active = "#F7F7F7"
-menu_title = "#283618"
+menu_primary = "#EDF1F1"
+menu_text = "#000"
+menu_text_active = "#000"
+menu_title = "#000"
 
-# Backgrounds
-background = "#F7F7F7"
-home_section_odd = "#F7F7F7"
-home_section_even = "#F7F7F7"
+# Links
+link = "#707070"
+link_hover = "#000"
+link_decoration = "underline"
 
-dark_background = ""
-dark_home_section_odd = ""
-dark_home_section_even = ""
+# Home sections
+home_section_odd = "#f9f7f6"
+home_section_even = "#ffffff"
 
-link = "#8ECAE6"
-link_hover = "#8ECAE6"
+font = "rose"
