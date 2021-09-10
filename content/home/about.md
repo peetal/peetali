@@ -18,10 +18,5 @@ title: About Me
 # This should be the username (folder name) of a profile in your `content/authors/` folder.
 # See https://wowchemy.com/docs/get-started/#introduce-yourself
 author: admin
-
-spacing:
-    # Customize the section spacing. Order is top, right, bottom, left.
-    padding: ["0", "0", "0", "0"]
-
 ---
 
