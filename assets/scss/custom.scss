@@ -41,6 +41,7 @@
   box-shadow: none;
   transition: all 0.2s ease-out;
 }
+  
 
 canvas {
   display:block;
@@ -84,6 +85,12 @@ h1.unselectable {
     -ms-user-select: none;
     user-select: none;
  }
+
+ .featurette-icon {
+  font-size: 3rem;
+  display: block;
+  margin: 0px;
+}
 
 
 

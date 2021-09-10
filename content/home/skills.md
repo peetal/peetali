@@ -18,18 +18,42 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-- description: 90%
-  icon: r-project
+- icon: r-project
   icon_pack: fab
   name: R
-- description: 100%
-  icon: chart-line
-  icon_pack: fas
-  name: Statistics
-- description: 10%
-  icon: camera-retro
-  icon_pack: fas
-  name: Photography
+- icon: tidymodels
+  icon_pack: custom
+  name: tidymodels
+- icon: tidyverse
+  icon_pack: custom
+  name: tidyverse
+- icon: python
+  icon_pack: custom
+  name: python
+- icon: git
+  icon_pack: custom
+  name: git
+- icon: flask
+  icon_pack: custom
+  name: flask
+- icon: matlab
+  icon_pack: custom
+  name: matlab
+- icon: sklearn
+  icon_pack: custom
+  name: sklearn
+- icon: shell
+  icon_pack: custom
+  name: shell
+
+
+design:
+  # Choose a view for the listings:
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   4 = Citation (publication only)
+  view: 2
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
