@@ -12,39 +12,68 @@ active: true
 weight: 30
 
 title: Skills
-subtitle:
+subtitle: Languages, Packages, and Frameworks
 
 # Showcase personal skills or business features.
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
+
+- icon: python
+  icon_pack: custom
+  name: Python
+- icon: sklearn
+  icon_pack: custom
+  name: Sklearn
+- icon: tensorflow
+  icon_pack: custom
+  name: Tensorflow
+- icon: numpy
+  icon_pack: custom
+  name: Numpy
+- icon: pandas
+  icon_pack: custom
+  name: Pandas
+- icon: statsmodels
+  icon_pack: custom
+  name: Statsmodels
+- icon: scipy
+  icon_pack: custom
+  name: Scipy
+- icon: matplotlib
+  icon_pack: custom
+  name: Matplotlib
 - icon: r-project
   icon_pack: fab
   name: R
 - icon: tidymodels
   icon_pack: custom
-  name: tidymodels
+  name: Tidymodels
 - icon: tidyverse
   icon_pack: custom
-  name: tidyverse
-- icon: python
+  name: Tidyverse
+- icon: sql
   icon_pack: custom
-  name: python
-- icon: git
-  icon_pack: custom
-  name: git
-- icon: flask
-  icon_pack: custom
-  name: flask
+  name: SQL
 - icon: matlab
   icon_pack: custom
-  name: matlab
-- icon: sklearn
+  name: Matlab
+- icon: git
   icon_pack: custom
-  name: sklearn
+  name: Git
 - icon: shell
   icon_pack: custom
-  name: shell
+  name: Shell
+- icon: html
+  icon_pack: custom
+  name: HTML
+- icon: css
+  icon_pack: custom
+  name: CSS
+- icon: flask
+  icon_pack: custom
+  name: Flask
+
 
 
 design:
