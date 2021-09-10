@@ -54,8 +54,8 @@ canvas {
   left: 0;
   right: 0;
   width: 100%;
-  height: 350px;
-  background: #EDF1F1;
+  height: 100%;
+  background: #000000;
   background-size: cover;
   z-index: -1;
   } 
@@ -71,7 +71,7 @@ h1.unselectable {
 }
 
 .home-section {
-    padding: 10px 0 60px 0;
+    padding: 10px 0 40px 0;
   }
 
 *.unselectable {
