@@ -92,17 +92,5 @@ h1.unselectable {
   margin: 0px;
 }
 
-.flex {
-  display: flex;
-  min-height: 200px;
-}
-
-.flex > .col-md-2 {
-  display: flex;                   /* create nested flex container */
-  flex-direction: column;          /* stack children (image and number) vertically */
-}
-
-img { margin: auto;}               /* forces numbers to bottom edge of container */
-
 
 
