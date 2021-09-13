@@ -78,7 +78,7 @@ print(clf.decision_function(testing_feature))
 
     svc linear kernel clf training took: 16.423278093338013
     svc linear kernel clf testing took: 6.240693092346191
-    Predicted labels are [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+    Predicted labels are: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
     ---------------------------------------------
     printing the decision function outputs for all testing samples:
     [-0.03974077 -0.03935351 -0.03929058 -0.03904115 -0.0405302  -0.03887102
