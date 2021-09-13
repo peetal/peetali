@@ -76,11 +76,11 @@ print('printing the decision function outputs for all testing samples')
 print(clf.decision_function(testing_feature))
 ```
 
-    svc linear kernel clf training took 16.423278093338013
-    svc linear kernel clf testing took 6.240693092346191
+    svc linear kernel clf training took: 16.423278093338013
+    svc linear kernel clf testing took: 6.240693092346191
     Predicted labels are [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
     ---------------------------------------------
-    printing the decision function outputs for all testing samples
+    printing the decision function outputs for all testing samples:
     [-0.03974077 -0.03935351 -0.03929058 -0.03904115 -0.0405302  -0.03887102
      -0.04086935 -0.04088076 -0.03897439 -0.03982852 -0.03934111 -0.04194098
      -0.04004195 -0.0407289  -0.04057421]
@@ -126,16 +126,16 @@ print(clf.decision_function(gram_test))
 ```
 
     --------------------Training---------------------
-    Computing gram matrix took 3.305522918701172
-    clf training took : 0.18439912796020508
+    Computing gram matrix took: 3.305522918701172
+    clf training took: 0.18439912796020508
     Total time for training: 3.490262985229492
     --------------------Testing---------------------
-    Computing testing kernel took 2.019568920135498
-    svc precomputed kernel clf testing took 0.0002570152282714844
+    Computing testing kernel took: 2.019568920135498
+    svc precomputed kernel clf testing took: 0.0002570152282714844
     Total time for testing: 2.0199968814849854
-    Predicted labels are [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+    Predicted labels are: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
     ---------------------------------------------
-    printing the decision function outputs for all testing samples
+    printing the decision function outputs for all testing samples:
     [-0.03974077 -0.03935351 -0.03929058 -0.03904115 -0.0405302  -0.03887102
      -0.04086935 -0.04088076 -0.03897439 -0.03982852 -0.03934111 -0.04194098
      -0.04004195 -0.0407289  -0.04057421]
