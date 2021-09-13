@@ -187,7 +187,7 @@ $$ w = \sum_{i=1}^{n} \alpha_{i}x_{i} $$
 $$ \alpha = (X^TX + \lambda I)^{-1}y = (G + \lambda I)^{-1}y $$
 
 ### 5.2 Think about the dual optimization problem in SVC
-Indeed the equation is much more complex when it comes to SVC. However, from 5.1, intuitively we can see that the solution of $\alpha$ can be written as a function of the Gram matrix G, which is $X^TX$. I believe the time complexity of sklearn implementation of $svm.svc(kernel = 'linear')$ would be $O(l^2n)$ with $l being the number of sample and n being the number of features becuase svm.SVC allows more complicated kernels, while linear kernel could be an special case. With precomputed gram matrix, the time complexity now is bounded by $O(l^3)$. Because $l \ll n$, the precomputed linear kernel is much faster. <br>
+Indeed the equation is much more complex when it comes to SVC. However, from 5.1, intuitively we can see that the solution of $\alpha$ can be written as a function of the Gram matrix G, which is $X^TX$. I believe the time complexity of sklearn implementation of svm.svc(kernel = 'linear') would be $O(l^2n)$ with $l$ being the number of sample and n being the number of features becuase svm.SVC allows more complicated kernels, while linear kernel could be an special case. With precomputed gram matrix, the time complexity now is bounded by $O(l^3)$. Because $l \ll n$, the precomputed linear kernel is much faster. <br>
 
 As my understanding in math grows (casue now obviously i suck), I will update this post with more concrete equations and interpretations. 
 
