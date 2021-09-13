@@ -182,7 +182,7 @@ $$ X^TXw + \lambda w - X^Ty = 0 $$
 $$ (X^TX + \lambda I)w = X^Ty $$
 Because $(X^TX + \lambda I)w$ is always invertable if $\lambda$ > 0, we have 
 $$ w = (X^TX + \lambda I)^{-1}yX^T$$
-Thus we show here that the weight matrix $w$ can be expressed as a linear combination of a vector $\alpha$ and $X$ 
+Thus we show here that the weight matrix $w$ can be expressed as a linear combination of a vector $\alpha$ and $X$ and $\alpha$ is a function of the gram matrix. 
 $$ w = \sum_{i=1}^{n} \alpha_{i}x_{i} $$
 $$ \alpha = (X^TX + \lambda I)^{-1}y = (G + \lambda I)^{-1}y $$
 
