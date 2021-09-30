@@ -290,7 +290,7 @@ y_pred = model.predict(X_new)
 - It connects all or part of the inputs directly to the output layer. This architecture makes it possible for the neural network to learn both deep patterns (using the deep path) and simple rules (through the short path). 
 - In contrast a regular MLP forces all the data to flow through the full stack of layers; thus, simple patterns in the data may end up being distorted by this sequence of transformations. <br>
 <br>
-<img src="img/wideDeepNet.png" style="width: 200px">
+<img src="scratch_files/wideDeepNet.png" style="width: 200px">
 
 
 
