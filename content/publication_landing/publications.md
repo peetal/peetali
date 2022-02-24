@@ -11,11 +11,11 @@ view: 2
 ## Publication
 {{< icon name="file-alt" pack="fas" >}}   __Li, Y. P.__, Wang, Y., Turk-Browne, N. B., Hutchinson, J. B. Task-free whole-brain functional connectivity patterns capture differences between perception and retrieval. (In preparation)
 
-{{< icon name="file-alt" pack="fas" >}}   __Li, Y. P.__, Cooper, S. R., & Braver, T. S. (2021). The role of neural load effects in predicting individual differences in working memory function. *NeuroImage*.&nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "assets/media/publications/NeuralLoad_NI.pdf" "newtab" >}}PDF{{< /staticref >}}. 
+{{< icon name="file-alt" pack="fas" >}}   __Li, Y. P.__, Cooper, S. R., & Braver, T. S. (2021). The role of neural load effects in predicting individual differences in working memory function. *NeuroImage*.&nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "/assets/media/publications/NeuralLoad_NI.pdf" "newtab" >}}PDF{{< /staticref >}}. 
 
-{{< icon name="file-alt" pack="fas" >}}   Ball, B. H., __Li, Y. P.__, & Bugg, J. M. (2020). Aging and strategic prospective memory monitoring. *Memory & Cognition*..&nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "assets/media/publications/ProspectiveMem_CM.pdf" "newtab" >}}PDF{{< /staticref >}}. 
+{{< icon name="file-alt" pack="fas" >}}   Ball, B. H., __Li, Y. P.__, & Bugg, J. M. (2020). Aging and strategic prospective memory monitoring. *Memory & Cognition*. &nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "/assets/media/publications/ProspectiveMem_CM.pdf" "newtab" >}}PDF{{< /staticref >}}. 
 
-{{< icon name="file-alt" pack="fas" >}}   Kumar, M., Anderson, M. J., Antony, J. W., Baldassano, C., Brooks, P. P., Cai, M. B., ... & Norman, K. A. (2020). BrainIAK: The brain imaging analysis kit. *Aperture Neuro*&nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "assets/media/publications/Brainiak.pdf" "newtab" >}}PDF{{< /staticref >}}. 
+{{< icon name="file-alt" pack="fas" >}}   Kumar, M., Anderson, M. J., Antony, J. W., Baldassano, C., Brooks, P. P., Cai, M. B., ... & Norman, K. A. (2020). BrainIAK: The brain imaging analysis kit. *Aperture Neuro*&nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "/assets/media/publications/Brainiak.pdf" "newtab" >}}PDF{{< /staticref >}}. 
 
 <br/><br/>
 
