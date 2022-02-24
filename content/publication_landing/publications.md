@@ -1,4 +1,5 @@
 ---
+widget: blank
 header:
   caption: ""
   image: ""
