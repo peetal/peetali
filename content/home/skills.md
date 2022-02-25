@@ -34,9 +34,9 @@ feature:
 - icon: pandas
   icon_pack: custom
   name: Pandas
-- icon: statsmodels
+- icon: keras
   icon_pack: custom
-  name: Statsmodels
+  name: Keras
 - icon: scipy
   icon_pack: custom
   name: Scipy
