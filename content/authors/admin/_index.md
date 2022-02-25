@@ -18,11 +18,8 @@ organizations:
 
 # Interests to show in About widget
 interests:
-- Statistical Machine Learning  
-- Deep Learning 
-- Graph-Theoretic Models
-- Statistical Programming
-- Data Mining 
+- Data Science
+- Machine learning engineering
 
 
 # Education to show in About widget
@@ -34,7 +31,7 @@ education:
   - course: MS in Cogntiive Neurosceince
     institution: University of Oregon
     year: 2019-2020
-  - course: BA in Cognitive Neuroscience and Biology (minor) 
+  - course: BA in Cognitive Neuroscience and Biology 
     institution: Washington University in St.Louis
     year: 2015-2019
 
@@ -75,4 +72,3 @@ highlight_name: false
 
 I am pursuing my PhD degree in psychology (specialized in cognitive neuroscience) at Universtiy of Oregon. My works focus on modeling, measuring and predicting human attention and attention-related beahviors. I apply machine learning algorithms in combined with inferential statistics to make sense of the data and infer neural mechanisms from the data. 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

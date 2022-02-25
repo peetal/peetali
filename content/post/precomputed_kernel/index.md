@@ -1,5 +1,5 @@
 ---
-title: Speeding Up linear SVM with precomputed kernel
+title: Speeding up linear SVM with precomputed kernel
 subtitle: Precompute kernel matrices for model training and testing
 
 # Summary for listings and search engines

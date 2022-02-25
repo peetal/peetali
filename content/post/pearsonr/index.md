@@ -1,5 +1,5 @@
 ---
-title: Speeding Up Computation of Pearson Correlation
+title: Speeding up Computation of Pearson Correlation
 subtitle: Use matrix multiplication to calculate pearson r faster
 
 # Summary for listings and search engines
