@@ -17,7 +17,7 @@ view: 2
 {{< icon name="file-alt" pack="fas" >}}   Ball, B. H., __Li, Y. P.__, & Bugg, J. M. (2020). Aging and strategic prospective memory monitoring. *Memory & Cognition*, 48(3), 370-389. &nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "publications/ProspectiveMem_CM.pdf" "newtab" >}}PDF{{< /staticref >}}. 
 
 {{< icon name="file-alt" pack="fas" >}}   Kumar, M., Anderson, M. J., Antony, J. W., Baldassano, C., Brooks, P. P., Cai, M. B., ..., __Li, Y. P.__, ..., & Norman, K. A. (2020). BrainIAK: The brain imaging analysis kit. *Aperture Neuro* &nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "publications/Brainiak.pdf" "newtab" >}}PDF{{< /staticref >}}. 
-<br/>
+<br/><br/>
 
 ## Conference Presentation
 
