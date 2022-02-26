@@ -2,7 +2,7 @@
 title: Full Correlation Matrix Analysis Tutorial
 
 # Summary for listings and search engines
-summary: This post 1) explain  what problems do FCMA target for 2) different components of FCMA and 3) demonstrate how to implement FCMA within Python
+summary: Full correlation matrix analysis (FCMA) is a recently development fMRI data analysis method. The goal of FCMA is to compare the whole brain interaction pattern between different cognitive states and to identify a set of regions whose interaction significantly differ across the two states. Such computation is extremely computationally demanding but FCMA used a couple tricks to dramatically speed up this computation process. The goal of this project is to go through the 3 main tricks done by FCMA, and demonstrate how FCMA can be implmented with python step-by-step. 
 
 # Link this post with a project
 projects: []
@@ -23,6 +23,22 @@ featured: false
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 authors:
 - admin
+
+# Custom links (optional).
+#   Uncomment and edit lines below to show custom links.
+links:
+# - name: Follow
+#   url: https://twitter.com
+#   icon_pack: fab
+#   icon: twitter
+- name: Code (Notebook Tutorial)
+  url: https://github.com/peetal/FCMA_demo
+  icon_pack: fab
+  icon: github
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
 
 tags:
 

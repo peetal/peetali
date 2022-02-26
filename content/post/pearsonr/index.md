@@ -1,18 +1,15 @@
 ---
 title: Speeding up Computation of Pearson Correlation
-subtitle: Use matrix multiplication to calculate pearson r faster
-
-# Summary for listings and search engines
-summary: Use matrix multiplication to calculate pearson r faster
+subtitle: This post shows a simple but handy trick for efficiently speeding up pearson correlation computation. This is also the first trick used by FCMA to speed up its computation. Specifically, pearson correlation could be done use matrix multiplication after standardization (e.g., zscore)
 
 # Link this post with a project
 projects: []
 
 # Date published
-date: "2021-09-11T00:00:00Z"
+date: "2021-08-17T00:00:00Z"
 
 # Date updated
-lastmod: "2021-09-11T00:00:00Z"
+lastmod: "2021-08-17T00:00:00Z"
 
 # Is this an unpublished draft?
 draft: false
@@ -25,6 +22,7 @@ featured: false
 authors:
 - admin
 
+reading_time: false
 tags:
 
 categories:
