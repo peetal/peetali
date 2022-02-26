@@ -1,6 +1,5 @@
 ---
 title: Full Correlation Matrix Analysis Tutorial
-subtitle: This post 1) explain  what problems do FCMA target for 2) different components of FCMA and 3) demonstrate how to implement FCMA within Python
 
 # Summary for listings and search engines
 summary: This post 1) explain  what problems do FCMA target for 2) different components of FCMA and 3) demonstrate how to implement FCMA within Python
@@ -29,18 +28,14 @@ tags:
 
 categories:
 ---
-
-# Full Correlation Matrix Analysis Tutorial
-
 ## 1. Overview: The problem and solution
 
 ### The problem:
 
 - When collecting neuroimaging data, functional MRI (fMRI) divide the brain into small units (voxels) and obtain the timeseries data for each unit, resulting usually more than 50k timeseries data. One type of neuroimaging data analysis is to examine how different parts of the brain are being temporally correlated (Functional connectivity) across different conditions. As a result, there is a need to compare sets of very large correlation matrices (e.g., 50k x 50k corMat) and to identify the difference between them.
 - The following diagram illustrate the problems we are trying to solve. Say each 50k x 50k correlation matrix indicates the brain dynamic for either condition A or B. **Now we ask: 1) Whether the brain dynamic differs between the two conditions and 2) What exactly is such difference.**
-    
-    ![Screen Shot 2021-09-17 at 1.30.48 PM.png](Full%20Corre%20e1f76/Screen_Shot_2021-09-17_at_1.30.48_PM.png)
-    
+
+![Screen Shot 2021-09-17 at 1.30.48 PM.png](Full%20Corre%20e1f76/Screen_Shot_2021-09-17_at_1.30.48_PM.png)
 
 ### Transfrom the Psych problem to a ML problem
 
@@ -62,6 +57,7 @@ categories:
 - Outer leave-one out cross validation loop: The outer loop selected the top k voxels and created a k x k correlation matrix, thus reducing the size of the feature map significantly. To test whether these dimension reduced feature maps can successfully perform binary classification, a SVM was trained and tested in a LOOCV manner. Thus, the inner LOOCV loop aims to select potentially useful feature and the outer LOOCV loop aims to examine the utility of the selected features.
 
 ## 3. FCMA demo
+
 ### Important details of simulated data <a id="dat"></a>
 
 - The simulated data consists of 8 subjects. The experiment consists of a **block design** and two conditions (A and B). **Each condition has 10 blocks (or epochs) for a total of 20 epochs** for each subject. The order of the epochs were randomized across the 8 subjects. Each **epoch lasts for 15 time points** followed by **5 time points of inter-block interval**. The total experiment lasts 400 time points in total. Here, time points are arbitrary and are meant to correspond to single TRs in an actual study. 
@@ -542,4 +538,109 @@ ax.set_title('Classification accuracy for each top-n-mask')
 ax.set_ylabel('Classification accuracy')
 ax.set_xlabel('Top n mask')
 print("The FCMA classification accuracy when using the functional connectivity pattern of \n voxels within each subject's top n mask to predict the current task condition (A or B) ")
+```
+
+    The FCMA classification accuracy when using the functional connectivity pattern of 
+     voxels within each subject's top n mask to predict the current task condition (A or B) 
+
+
+
+![png](Full%20Corre%20e1f76/FCMA_demo_26_1.png)
+
+
+### 3.2 Visualize functional connectivity pattern with circos plot <a id="circos"></a>
+- For a given epoch, we can use circos plot to understand the functional connectivity pattern between our top N voxels. Note that for plotting the circos plot, one would usually be dealing with thousands of voxels, thus knowing how to group voxels beforehand is important. Here for the simulated data, we have two arbitrarily chosen ROIs, and the top n voxels were grouped into one of these two ROIs.
+
+
+```python
+# Load in the data 
+epoch_data = raw_data[0] # Just load a single subject and a single epoch
+mask_top_n_file = os.path.join(output_dir, 'top_30/fc_no0_result_seq_top30.nii.gz')
+mask_top_n_nii = nib.load(mask_top_n_file)  # Load the mask that leaves that participant out
+mask_top_n = mask_top_n_nii.get_fdata()
+
+# Convert the top n mask into a vector with the same number of elements as the whole brain
+mask_vec = mask.reshape(np.prod(mask.shape))
+mask_top_vec = mask_top_n.reshape(np.prod(mask_top_n.shape))[mask_vec]
+
+# Modify the epoch data, for visulization purpose
+epoch_data[:,np.where(mask_top_vec==0)] = 1
+
+# Make the data c continguous 
+epoch_data_masked = np.ascontiguousarray(epoch_data.T, dtype=np.float32)
+
+# Create the internal correlation
+epoch_corr = compute_correlation(epoch_data_masked, epoch_data_masked)
+
+# Load the two simulated ROIs
+roiA = nib.load(os.path.join(cur_dir, 'sim_info/ROI_A_mpfc.nii.gz')).get_fdata()
+roiB = nib.load(os.path.join(cur_dir, 'sim_info/ROI_B_precuenus.nii.gz')).get_fdata()
+
+# Pull out the coordinates of the mask (in numpy space)
+coord_x, coord_y, coord_z = np.where(mask == 1)
+
+# %matplotlib inline
+
+# What is the (absolute) correlation threshold
+threshold = 0.8
+
+# Preset the graph
+G = nx.Graph()
+
+# Create the edge list
+nodelist = []
+edgelist = []
+for row_counter in range(epoch_corr.shape[0]):
+    nodelist.append(str(row_counter))  # Set up the node names
+    
+    for col_counter in range(epoch_corr.shape[1]):
+        
+        # Determine whether to include the edge based on whether it exceeds the threshold
+        if (abs(epoch_corr[row_counter, col_counter]) > threshold) and (abs(epoch_corr[row_counter, col_counter]) < 1):
+            # Add a tuple specifying the voxel pairs being compared and the weight of the edge
+            edgelist.append((str(row_counter), str(col_counter), {'weight': epoch_corr[row_counter, col_counter]}))
+        
+# Create the nodes in the graph
+G.add_nodes_from(nodelist)
+
+# Add the edges
+G.add_edges_from(edgelist)
+
+for n, d in G.nodes(data=True):
+    
+    # Is the voxel in roiA or B
+    if roiA[coord_x[int(n)],coord_y[int(n)],coord_z[int(n)]] == 1:
+        G.nodes[n]['grouping'] = 'roiA (mPFC)'
+
+    elif roiB[coord_x[int(n)],coord_y[int(n)],coord_z[int(n)]] == 1:
+        G.nodes[n]['grouping'] = 'roiB (Precuneus)'
+
+
+c = CircosPlot(graph=G, node_grouping='grouping', node_color='grouping', group_label_position='middle',figsize=(10,6))
+c.draw()
+plt.title('Circos plot of an epoch data')
+print("The figure plots all 432 voxels across two ROIs; \nand highlighted how the top 30 voxels are functionally connected, both within and across ROIs.")
+```
+
+    The figure plots all 432 voxels across two ROIs; 
+    and highlighted how the top 30 voxels are functionally connected, both within and across ROIs.
+
+
+
+![png](Full%20Corre%20e1f76/FCMA_demo_32_1.png)
+
+
+## 4. Summary <a id="sum"></a>
+- In the notebook, we have shown how to use FCMA to perform non-seed based, whole brain functional connectivity analyses. Going back to our two initial questions, we asked:
+    1. Do functional connectivity patterns differ between condition A and B? 
+    2. If so, which brain regions are driving the difference?
+- Answering Q1: 
+    - Based on the plot in 3.1 above, we can argue the functional connectivity pattern within the top 20 and 30 selected voxels can be used to differentiate whether a subject is doing condition A or B with relatively high accuracy. Thus, the answer to question 1 is yes! The FC patterns do differ across condition A and B.
+- Answering Q2:
+    - The plot in 3.2 shows where those top n voxels are located and the plot in 3.3 shows how the top n voxels are functionally connected. 
+   
+
+
+```python
+
 ```
