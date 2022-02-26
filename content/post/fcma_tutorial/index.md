@@ -35,13 +35,13 @@ categories:
 - When collecting neuroimaging data, functional MRI (fMRI) divide the brain into small units (voxels) and obtain the timeseries data for each unit, resulting usually more than 50k timeseries data. One type of neuroimaging data analysis is to examine how different parts of the brain are being temporally correlated (Functional connectivity) across different conditions. As a result, there is a need to compare sets of very large correlation matrices (e.g., 50k x 50k corMat) and to identify the difference between them.
 - The following diagram illustrate the problems we are trying to solve. Say each 50k x 50k correlation matrix indicates the brain dynamic for either condition A or B. **Now we ask: 1) Whether the brain dynamic differs between the two conditions and 2) What exactly is such difference.**
 
-![Screen Shot 2021-09-17 at 1.30.48 PM.png](Full%20Corre%20e1f76/Screen_Shot_2021-09-17_at_1.30.48_PM.png)
+<img src="Full%20Corre%20e1f76/Screen_Shot_2021-09-17_at_1.30.48_PM.png" alt="drawing" width="700"/>
 
 ### Transfrom the Psych problem to a ML problem
 
 - The aforementioned two questions can be solved using machine learning techniques. Specifically, we are asking if we could train a classifier to separate the two sets of correaltion matrices and what features drive the model decision, as shown in the following figure. To do this, we need to first come up with a smart feature selection framework and then make sure our model can deal with a large number of features in fast speed.
 
-![Screen Shot 2021-09-17 at 3.40.32 PM.png](Full%20Corre%20e1f76/Screen_Shot_2021-09-17_at_3.40.32_PM.png)
+<img src="Full%20Corre%20e1f76/Screen_Shot_2021-09-17_at_3.40.32_PM.png" alt="drawing" width="700"/>
 
 ### The solution:
 
@@ -51,7 +51,7 @@ categories:
 
 ## 2. A nested cross-validation framework for feature selection
 
-![Screen Shot 2022-02-25 at 4.55.43 PM.png](Full%20Corre%20e1f76/Screen_Shot_2022-02-25_at_4.55.43_PM.png)
+<img src="Full%20Corre%20e1f76/Screen_Shot_2022-02-25_at_4.55.43_PM.png" alt="drawing" width="700"/>
 
 - Inner leave-one out cross validation (LOOCV) loop: With the inner loop, we are dealing with the original size feature maps, with each data point having 50k x 50k features (connections). The inner loop tested how useful each voxel’s seed map (i.e., how this voxel is temporary connected with every other voxel in the brain) can be used to classify the two conditions. To do this, the inner loop would use each row/column of the correlation matrix, thus being each voxel’s seed map to build and test the binary SVM model in a LOOCV manner, resulting an accuracy score for each voxel.
 - Outer leave-one out cross validation loop: The outer loop selected the top k voxels and created a k x k correlation matrix, thus reducing the size of the feature map significantly. To test whether these dimension reduced feature maps can successfully perform binary classification, a SVM was trained and tested in a LOOCV manner. Thus, the inner LOOCV loop aims to select potentially useful feature and the outer LOOCV loop aims to examine the utility of the selected features.
