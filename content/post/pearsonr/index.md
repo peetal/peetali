@@ -1,6 +1,6 @@
 ---
 title: Speeding up Computation of Pearson Correlation
-subtitle: This post shows a simple but handy trick for efficiently speeding up pearson correlation computation. This is also the first trick used by FCMA to speed up its computation. Specifically, pearson correlation could be done use matrix multiplication after standardization (e.g., zscore)
+summary: This post shows a simple but handy trick for efficiently speeding up pearson correlation computation. This is also the first trick used by FCMA to speed up its computation. Specifically, pearson correlation could be done use matrix multiplication after standardization (e.g., zscore)
 
 # Link this post with a project
 projects: []
@@ -19,8 +19,6 @@ featured: false
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-authors:
-- admin
 
 reading_time: false
 tags:

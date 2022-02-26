@@ -21,8 +21,6 @@ featured: false
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-authors:
-- admin
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.

@@ -1,6 +1,6 @@
 ---
 title: Speeding up linear SVM with precomputed kernel
-subtitle: Sklearn svm.SVC(kernel = "linear") is really slow. This posts shows a trick for speeding up this process by precomputing the gram matrix of the linear kernal. This step does not require too much hussle, besides some extra matrix multiplication and re-orginizing training and testing data. But the precomputed linear kernal dramatically speed up linear SVC computation. This is another trick used in FCMA to speed up its computation process. 
+summary: Sklearn svm.SVC(kernel = "linear") is really slow. This posts shows a trick for speeding up this process by precomputing the gram matrix of the linear kernal. This step does not require too much hussle, besides some extra matrix multiplication and re-orginizing training and testing data. But the precomputed linear kernal dramatically speed up linear SVC computation. This is another trick used in FCMA to speed up its computation process. 
 
 # Link this post with a project
 projects: []
@@ -20,8 +20,6 @@ featured: false
 reading_time: false
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-authors:
-- admin
 
 tags:
 
