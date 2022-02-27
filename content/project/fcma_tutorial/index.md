@@ -38,9 +38,7 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 
-tags:
-
-categories:
+slides: ""
 ---
 ## 1. Overview: The problem and solution
 
