@@ -2,7 +2,7 @@
 title: Real-time Decoding of Attention
 
 # Summary for listings and search engines
-summary: Fill this
+summary: This project aims to investigate the neural mechanism that sustain or switch between attentional states. The first experiment combined machine learning framework with non-parametric statistical testing and multivariate analyses to identify neuromarkers that characterize and differentiate between attentional states. The second experiment built upon these findings by using the pre-trained model and a real-time neuro-feedback framework to design a closed-loop attentional focus traninig framework for potential clinical uses. 
 
 # Link this post with a project
 projects: []
@@ -21,6 +21,11 @@ featured: false
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: true
+
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -29,7 +34,7 @@ links:
 #   url: https://twitter.com
 #   icon_pack: fab
 #   icon: twitter
-- name: Code (Notebook Tutorial)
+- name: Code and Pipeline
   url: https://github.com/peetal/rt-project
   icon_pack: fab
   icon: github
