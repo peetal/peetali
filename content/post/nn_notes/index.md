@@ -25,51 +25,78 @@ tags:
 
 categories:
 ---
-<img src="dlnotes/dlnotes_Page_01.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_02.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_03.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_04.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_05.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_06.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_07.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_08.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_09.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_10.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_11.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_12.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_13.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_14.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_15.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_16.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_17.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_18.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_19.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_20.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_21.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_22.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_23.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_24.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_25.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_26.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_27.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_28.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_29.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_30.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_31.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_32.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_33.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_34.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_35.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_36.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_37.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_38.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_39.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_40.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_41.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_42.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_43.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_44.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_45.png" alt="drawing" width="1200"/>
-<img src="dlnotes/dlnotes_Page_46.png" alt="drawing" width="1200"/>
+### Table of contents
+1. [Intro to Neural Network and Deep Learning](#course1)
+    1. [Logistic regression (forward & backward)](#log)
+    2. [Neural network representation & activation functions](#nn)
+    3. [Gradient descent, Back prop, & DNN](#dnn)
+2. [Improving DNN: Hyperparameter tuning, Regularization, & Optimization](#course2)
+    1. [General logic for improving DNN](#logic)
+    2. [L2 regularization](#l2)
+    3. [Dropout and Early-stop](#dropout)
+    4. [Normalize inputs](#norminput)
+    5. [Vanishing gradient & Initilization](#vanishGrad)
+    6. [Gradient checking](#gradcheck)
+    7. [Batch & mini-batch gradient descent](#batchgd)
+    8. [Optimizers](#opt)
+    9. [Learning rate decay](#alphadec)
+    10. [Hyperparameter tunning process](#tunepro)
+    11. [Batch Normalization](#batchNorm)
+    12. [Softmax activation](#softmax)
+3. 
 
+## Intro to Neural Network and Deep Learning <a name="course1"></a>
 
+### Logistic regression (forward & backward) <a name="log"></a>
+<img src="dlnotes/course1/c1_logisticReg&NN1.png" alt="drawing" width="700"/>
+<img src="dlnotes/course1/c1_logisticReg&NN2.png" alt="drawing" width="700"/>
+
+### Neural network representation & activation functions  <a name="nn"></a>
+<img src="dlnotes/course1/c1_logisticReg&NN3.png" alt="drawing" width="700"/>
+<img src="dlnotes/course1/c1_logisticReg&NN4.png" alt="drawing" width="700"/>
+
+### Gradient descent, Back prop, & DNN <a name="dnn"></a>
+<img src="dlnotes/course1/c1_logisticReg&NN5.png" alt="drawing" width="700"/>
+<img src="dlnotes/course1/c1_logisticReg&NN6.png" alt="drawing" width="700"/>
+<img src="dlnotes/course1/c1_logisticReg&NN7.png" alt="drawing" width="700"/>
+
+## Improving DNN: Hyperparameter tuning, Regularization, & Optimization <a name="course2"></a>
+
+### General logic for improving DNN <a name="logic"></a>
+<img src="dlnotes/course2/c2_01_logic.png" alt="drawing" width="700"/>
+
+### L2 regularization <a name="l2"></a>
+<img src="dlnotes/course2/c2_02_l2reg.png" alt="drawing" width="700"/>
+
+### Dropout and Early-stop <a name="dropout"></a>
+<img src="dlnotes/course2/c2_03_dropout&earlystop.png" alt="drawing" width="700"/>
+
+### Normalize inputs <a name="norminput"></a>
+<img src="dlnotes/course2/c2_04_normalizeInput.png" alt="drawing" width="700"/>
+
+### Vanishing gradient & Initilization <a name="vanishGrad"></a>
+<img src="dlnotes/course2/c2_05_vanishingGrad.png" alt="drawing" width="700"/>
+
+### Gradient checking <a name="gradcheck"></a>
+<img src="dlnotes/course2/c2_06_gradientCheck.png" alt="drawing" width="700"/>
+
+### Batch & mini-batch gradient descent <a name="batchgd"></a>
+<img src="dlnotes/course2/c2_07_batchgd_1.png" alt="drawing" width="700"/>
+<img src="dlnotes/course2/c2_08_batchgd_2.png" alt="drawing" width="700"/>
+
+### Optimizers <a name="opt"></a>
+<img src="dlnotes/course2/c2_09_optimizer_1.png" alt="drawing" width="700"/>
+<img src="dlnotes/course2/c2_10_optimizer_2.png" alt="drawing" width="700"/>
+
+### Learning rate decay <a name="alphadec"></a>
+<img src="dlnotes/course2/c2_11_alphadecay.png" alt="drawing" width="700"/>
+
+### Hyperparameter tunning process <a name="tunepro"></a>
+<img src="dlnotes/course2/c2_12_tunningprocess.png" alt="drawing" width="700"/>
+
+### Batch Normalization <a name="batchNorm"></a>
+<img src="dlnotes/course2/c2_13_batchNorm1.png" alt="drawing" width="700"/>
+<img src="dlnotes/course2/c2_14_batchNorm2.png" alt="drawing" width="700"/>
+
+### Softmax activation <a name="softmax"></a>
+<img src="dlnotes/course2/c2_15_softmax.png" alt="drawing" width="700"/>

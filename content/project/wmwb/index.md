@@ -1,4 +1,50 @@
-# Predictive modeling of human cognitive function
+---
+title: Predictive modeling of human cognitive function
+
+# Summary for listings and search engines
+summary: This project primarily focused on 2 hot problems in fMRI research. First, we provided insights on how to significantly increase effect size for fMRI research such that even with relatively small sample size, we would still have enough statistical power to detect such effects. Second, we explore an useful heuristic that guide feature selection to improve predictive models for human cognitive functions. 
+
+# Link this post with a project
+projects: []
+
+# Date published
+date: "2021-7-06T00:00:00Z"
+
+# Date updated
+lastmod: "2021-07-06T00:00:00Z"
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: true
+
+
+# Custom links (optional).
+#   Uncomment and edit lines below to show custom links.
+links:
+# - name: Follow
+#   url: https://twitter.com
+#   icon_pack: fab
+#   icon: twitter
+- name: Code 
+  url: https://github.com/peetal/WMBW
+  icon_pack: fab
+  icon: github
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+
+slides: ""
+---
 
 ## 1. Background and Goals
 
