@@ -32,12 +32,12 @@ content:
   order: desc
 
 design:
-  columns: '3'  
+  columns: '2'  
   # Choose a view for the listings:
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 3
+  view: 2
 
 ---
