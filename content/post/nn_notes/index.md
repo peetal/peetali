@@ -1,6 +1,6 @@
 ---
 title: Coursera Deep Learning Specialization Notes
-summary: 
+summary: These notes include important concepts and model architectures on DNN, optimizers, hyperparameters tunning, CNN, YOLO algorithm for DeepCV, triplet loss and siamese network for one-shot learning, RNN with LSTM and GRU units, attention mechanism and Transformer architectures for NLP and CV. 
 
 # Link this post with a project
 projects: []
