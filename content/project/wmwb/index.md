@@ -71,7 +71,7 @@ slides: ""
 
 - We predicted that parcels that showed a large, positive effect size (in working memory tasks) should be more useful features for building predictive models. To test this hypothesis, we binned parcels based on effect sizes and used the same number of parcels from each bin to predict human cognitive functions. Moreover, we constructed null distributions of the ***differences*** between bins if parcels were randomly selected. Thus we were able to test whether the observed predictive power differences between bins are truly significant.
 
-<img src="Predictive%20d65b2/Screen_Shot_2022-02-28_at_10.37.23_AM.png" alt="drawing" width="700"/>
+<img src="Predictive%20d65b2/Screen_Shot_2022-02-28_at_10.37.23_AM.png" alt="drawing" width="1000"/>
 
 - As expected, our results showed that parcel bins of larger effect sizes tend to show significantly greater predictive power. And parcels bins of positive effect size (load-activated parcels) tend to have better predictive power than those bins of negative effective size (load-deactivated parcels).
 
