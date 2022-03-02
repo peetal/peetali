@@ -213,7 +213,7 @@ categories:
 ### Language models & Sampling new text <a name="lang"></a>
 <img src="dlnotes/course5/c5_04_languageMod.png" alt="drawing" width="1000"/>
 
-### GRU & LSTM <a name="gru&lstm"></a>
+### GRU & LSTM <a name="grulstm"></a>
 <img src="dlnotes/course5/c5_05_gru&lstm.png" alt="drawing" width="1000"/>
 
 ### Deep RNN <a name="deep"></a>
