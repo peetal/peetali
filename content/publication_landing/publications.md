@@ -10,7 +10,7 @@ view: 2
 
 ## Publication
 
-{{< icon name="file-alt" pack="fas" >}}   __Li, Y. P.__, Wang, Y., Turk-Browne, N. B., Kuhl, B. A., & Hutchinson, J. B. Whole-brain Background Functional Connectivity Patterns Capture Differences Between Perception and Retrieval States (In preparation). &nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "publications/FCMAretper_final.pdf" "newtab" >}}PDF{{< /staticref >}}. 
+{{< icon name="file-alt" pack="fas" >}}   __Li, Y. P.__, Wang, Y., Turk-Browne, N. B., Kuhl, B. A., & Hutchinson, J. B. Whole-brain Background Functional Connectivity Patterns Capture Differences Between Perception and Retrieval States (In preparation). &nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "publications/NeuralLoad_NI.pdf" "newtab" >}}PDF{{< /staticref >}}.
 
 {{< icon name="file-alt" pack="fas" >}}   __Li, Y. P.__, Cooper, S. R., & Braver, T. S. (2021). The role of neural load effects in predicting individual differences in working memory function. *NeuroImage*, 245, 118656. &nbsp;{{< icon name="download" pack="fas" >}} {{< staticref "publications/NeuralLoad_NI.pdf" "newtab" >}}PDF{{< /staticref >}}. 
 
