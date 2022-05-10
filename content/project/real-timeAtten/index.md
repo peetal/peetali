@@ -35,7 +35,7 @@ links:
 #   icon_pack: fab
 #   icon: twitter
 - name: Code and Pipeline
-  url: https://github.com/peetal/rt-project
+  url: https://github.com/peetal/Decode_AttenStates
   icon_pack: fab
   icon: github
 url_code: ""
