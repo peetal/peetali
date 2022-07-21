@@ -1,5 +1,50 @@
-# Fine-Tune BERT for Address Element Extraction
+---
+title: Fine-Tune BERT for Address Element Extraction
 
+# Summary for listings and search engines
+summary: For this project, I fine-tune a pre-trained BERT on Indonesian to perform named entity recognition task. Specifically, the goal is to train the model to automatically extract the key elements from unstructured raw address. The pre-trained model was adopted from huggingface transformer. The fine-tuned model achieved high f1 score and is able to accurately extract useful elements from new raw address texts. 
+
+# Link this post with a project
+projects: []
+
+# Date published
+date: "2022-06-2000:00:00Z"
+
+# Date updated
+lastmod: "2022-06-20T00:00:00Z"
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: true
+
+
+# Custom links (optional).
+#   Uncomment and edit lines below to show custom links.
+links:
+# - name: Follow
+#   url: https://twitter.com
+#   icon_pack: fab
+#   icon: twitter
+- name: Code 
+  url: https://github.com/peetal/street-element-extraction
+  icon_pack: fab
+  icon: github
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+
+slides: ""
+---
 ## 1. Overview: The problem and solution
 
 ### The Problem
