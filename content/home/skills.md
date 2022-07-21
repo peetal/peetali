@@ -28,18 +28,18 @@ feature:
 - icon: tensorflow
   icon_pack: custom
   name: Tensorflow
+- icon: keras
+  icon_pack: custom
+  name: Keras
+- icon: huggingface
+  icon_pack: custom
+  name: Huggingface
 - icon: numpy
   icon_pack: custom
   name: Numpy
 - icon: pandas
   icon_pack: custom
   name: Pandas
-- icon: keras
-  icon_pack: custom
-  name: Keras
-- icon: scipy
-  icon_pack: custom
-  name: Scipy
 - icon: matplotlib
   icon_pack: custom
   name: Matplotlib
