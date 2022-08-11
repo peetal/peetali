@@ -1,5 +1,5 @@
 ---
-title: Fine-Tune BERT for Address Element Extraction
+title: Transfer learning with transformers for minority language NER
 
 # Summary for listings and search engines
 summary: For this project, I fine-tune a pre-trained BERT on Indonesian to perform named entity recognition task. Specifically, the goal is to train the model to automatically extract the key elements from unstructured raw address. The pre-trained model was adopted from huggingface transformer. The fine-tuned model achieved high f1 score and is able to accurately extract useful elements from new raw address texts. 

@@ -1,5 +1,5 @@
 ---
-title: Real-time Decoding of Attention
+title: fMRI real‑time neuro‑feedback for attentional training
 
 # Summary for listings and search engines
 summary: This project aims to investigate the neural mechanism that sustain or switch between attentional states. The first experiment combined machine learning framework with non-parametric statistical testing and multivariate analyses to identify neuromarkers that characterize and differentiate between attentional states. The second experiment built upon these findings by using the pre-trained model and a real-time neuro-feedback framework to design a closed-loop attentional focus traninig framework for potential clinical uses. 
